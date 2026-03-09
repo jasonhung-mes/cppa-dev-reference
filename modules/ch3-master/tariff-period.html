@@ -1,0 +1,64 @@
+<h2>電價時段明細</h2>
+
+<div class="card">
+  <div class="card-title">功能說明</div>
+  <p>
+  電價時段明細定義在某一電價版本下的時間區段與對應電價。
+  例如尖峰、半尖峰與離峰時段。系統在匹配與結算時會依據
+  時段判斷適用的電價。
+  </p>
+</div>
+
+<div class="card">
+
+  <div class="card-title">電價時段列表</div>
+
+  <button class="button button-primary">新增時段</button>
+
+  <table class="table" style="margin-top:12px;">
+
+    <thead>
+      <tr>
+        <th>時段代碼</th>
+        <th>電價版本</th>
+        <th>時段名稱</th>
+        <th>開始時間</th>
+        <th>結束時間</th>
+        <th>電價 (NTD/kWh)</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>PERIOD001</td>
+        <td>VER2025</td>
+        <td>尖峰</td>
+        <td>13:00</td>
+        <td>18:00</td>
+        <td>5.2</td>
+        <td class="table-actions">
+          <button class="button button-secondary">查看</button>
+          <button class="button button-secondary">編輯</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>PERIOD002</td>
+        <td>VER2025</td>
+        <td>離峰</td>
+        <td>00:00</td>
+        <td>07:00</td>
+        <td>2.8</td>
+        <td class="table-actions">
+          <button class="button button-secondary">查看</button>
+          <button class="button button-secondary">編輯</button>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

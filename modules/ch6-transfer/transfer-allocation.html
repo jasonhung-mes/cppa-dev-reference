@@ -1,0 +1,108 @@
+
+<h2 style="margin-bottom:20px;font-weight:600;color:#0F172A;">
+Transfer Allocation
+<span style="font-size:13px;color:#6B7280;margin-left:10px;">
+轉供分配結果
+</span>
+</h2>
+
+<style>
+
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
+margin-bottom:24px;
+}
+
+.kpi{
+background:#ffffff;
+border-radius:12px;
+padding:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kpi-title{
+font-size:12px;
+color:#6B7280;
+margin-bottom:6px;
+}
+
+.kpi-value{
+font-size:22px;
+font-weight:700;
+color:#111827;
+}
+
+.section{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.05);
+margin-bottom:24px;
+}
+
+.section-title{
+font-size:14px;
+font-weight:600;
+margin-bottom:14px;
+color:#111827;
+}
+
+.chart-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px;
+align-items:center;
+}
+
+</style>
+
+
+<div class="kpi-grid">
+
+<div class="kpi">
+<div class="kpi-title">Total Allocated Energy</div>
+<div class="kpi-value">9.4 MWh</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Plants Involved</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Customers</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Allocation Efficiency</div>
+<div class="kpi-value">88%</div>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-title">
+Plant Allocation Distribution
+</div>
+
+<div class="chart-layout">
+
+<div id="transferAllocationChart" style="width:100%;height:380px;"></div>
+
+<div style="font-size:13px;color:#6B7280;line-height:1.7;">
+
+此圖呈現各發電案場在轉供分配中的電量比例。<br><br>
+
+透過分配結構可以觀察各發電案場在整體供電策略中的角色，
+並評估不同案場對企業供電需求的貢獻程度。
+
+</div>
+
+</div>
+
+</div>

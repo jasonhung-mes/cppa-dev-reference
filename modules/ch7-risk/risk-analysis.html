@@ -1,0 +1,112 @@
+
+<h2 style="margin-bottom:20px;font-weight:600;color:#0F172A;">
+Risk Analysis Matrix
+<span style="font-size:13px;color:#6B7280;margin-left:10px;">
+供電風險分析
+</span>
+</h2>
+
+<style>
+
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
+margin-bottom:24px;
+}
+
+.kpi{
+background:#ffffff;
+border-radius:12px;
+padding:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kpi-title{
+font-size:12px;
+color:#6B7280;
+margin-bottom:6px;
+}
+
+.kpi-value{
+font-size:22px;
+font-weight:700;
+color:#111827;
+}
+
+.section{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.05);
+margin-bottom:24px;
+}
+
+.section-title{
+font-size:14px;
+font-weight:600;
+margin-bottom:14px;
+color:#111827;
+}
+
+.chart-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px;
+align-items:center;
+}
+
+</style>
+
+
+<div class="kpi-grid">
+
+<div class="kpi">
+<div class="kpi-title">Risk Level</div>
+<div class="kpi-value">Medium</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Plants Evaluated</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">High Risk Slots</div>
+<div class="kpi-value">4</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Stability Index</div>
+<div class="kpi-value">86%</div>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-title">
+Plant Risk Heatmap
+</div>
+
+<div class="chart-layout">
+
+<div id="riskHeatmap" style="width:100%;height:420px;"></div>
+
+<div style="font-size:13px;color:#6B7280;line-height:1.7;">
+
+此圖顯示不同發電案場在不同時間段的供電風險。<br><br>
+
+顏色越深代表風險越高，例如可能因天氣、
+設備或供需波動造成供電不穩定。
+
+<br><br>
+
+系統可以根據此風險矩陣提前調整轉供或調度策略。
+
+</div>
+
+</div>
+
+</div>

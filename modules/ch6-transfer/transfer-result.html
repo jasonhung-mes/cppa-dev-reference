@@ -1,0 +1,112 @@
+
+<h2 style="margin-bottom:20px;font-weight:600;color:#0F172A;">
+Energy Transfer Flow
+<span style="font-size:13px;color:#6B7280;margin-left:10px;">
+轉供能源流向
+</span>
+</h2>
+
+<style>
+
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
+margin-bottom:24px;
+}
+
+.kpi{
+background:#ffffff;
+border-radius:12px;
+padding:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kpi-title{
+font-size:12px;
+color:#6B7280;
+margin-bottom:6px;
+}
+
+.kpi-value{
+font-size:22px;
+font-weight:700;
+color:#111827;
+}
+
+.section{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.05);
+margin-bottom:24px;
+}
+
+.section-title{
+font-size:14px;
+font-weight:600;
+margin-bottom:14px;
+color:#111827;
+}
+
+.chart-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px;
+align-items:center;
+}
+
+</style>
+
+
+<div class="kpi-grid">
+
+<div class="kpi">
+<div class="kpi-title">Total Energy Flow</div>
+<div class="kpi-value">9.4 MWh</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Source Plants</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Destination Customers</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Transfer Efficiency</div>
+<div class="kpi-value">91%</div>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-title">
+Energy Transfer Flow Diagram
+</div>
+
+<div class="chart-layout">
+
+<div id="dispatchFlow" style="width:100%;height:420px;"></div>
+
+<div style="font-size:13px;color:#6B7280;line-height:1.7;">
+
+此圖展示綠電從發電案場流向企業用戶的轉供流程。<br><br>
+
+每一條連線代表能源流向，
+寬度代表電量大小。
+
+<br><br>
+
+透過此 Sankey 圖可以直觀理解整個綠電供應鏈的能源分配情況。
+
+</div>
+
+</div>
+
+</div>

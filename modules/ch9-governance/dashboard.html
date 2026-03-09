@@ -1,0 +1,151 @@
+
+<h2 style="margin-bottom:20px;color:#1B5E20;font-weight:600;">
+CPPA 綠電營運控制儀表板
+<span style="font-size:13px;color:#6b7a88;margin-left:10px;">
+Renewable Energy Operations Dashboard
+</span>
+</h2>
+
+<style>
+
+body{
+background:#F4F7FA;
+}
+
+/* KPI GRID */
+
+.dashboard-grid{
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+gap:18px;
+margin-bottom:24px;
+}
+
+.kpi-card{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+display:flex;
+align-items:center;
+gap:14px;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
+border-top:4px solid #2E7D32;
+}
+
+.kpi-icon{
+width:42px;
+height:42px;
+background:#E8F5E9;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+color:#2E7D32;
+}
+
+.kpi-title{
+font-size:12px;
+color:#7A8793;
+}
+
+.kpi-value{
+font-size:26px;
+font-weight:700;
+color:#263238;
+}
+
+.kpi-sub{
+font-size:11px;
+color:#9AA5B1;
+}
+
+/* SECTIONS */
+
+.section{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.06);
+margin-bottom:22px;
+border:1px solid #EEF2F6;
+}
+
+.section-title{
+font-size:14px;
+font-weight:600;
+margin-bottom:12px;
+color:#1B5E20;
+}
+
+/* CHART LAYOUT */
+
+.chart-row{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:20px;
+}
+
+</style>
+
+
+<div class="dashboard-grid">
+
+<div class="kpi-card">
+<div class="kpi-icon">⚡</div>
+<div>
+<div class="kpi-title">總綠電發電量</div>
+<div class="kpi-value">125 MWh</div>
+<div class="kpi-sub">Today Generation</div>
+</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-icon">🔌</div>
+<div>
+<div class="kpi-title">總用電需求</div>
+<div class="kpi-value">132 MWh</div>
+<div class="kpi-sub">Customer Consumption</div>
+</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-icon">🌱</div>
+<div>
+<div class="kpi-title">綠電匹配率</div>
+<div class="kpi-value">92%</div>
+<div class="kpi-sub">Energy Matching</div>
+</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-icon">⚠️</div>
+<div>
+<div class="kpi-title">履約風險</div>
+<div class="kpi-value">Low</div>
+<div class="kpi-sub">Contract Risk</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<div class="section-title">發電 vs 用電趨勢 (Generation vs Consumption)</div>
+<div id="trendChart" style="width:100%;height:380px;"></div>
+</div>
+
+
+<div class="chart-row">
+
+<div class="section">
+<div class="section-title">案場發電排名 (Plant Generation Ranking)</div>
+<div id="plantChart" style="width:100%;height:320px;"></div>
+</div>
+
+<div class="section">
+<div class="section-title">綠電匹配率 (Matching Rate)</div>
+<div id="matchGauge" style="width:100%;height:320px;"></div>
+</div>
+
+</div>

@@ -1,0 +1,112 @@
+
+<h2 style="margin-bottom:20px;font-weight:600;color:#0F172A;">
+Dispatch Simulation
+<span style="font-size:13px;color:#6B7280;margin-left:10px;">
+調度情境模擬
+</span>
+</h2>
+
+<style>
+
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
+margin-bottom:24px;
+}
+
+.kpi{
+background:#ffffff;
+border-radius:12px;
+padding:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kpi-title{
+font-size:12px;
+color:#6B7280;
+margin-bottom:6px;
+}
+
+.kpi-value{
+font-size:22px;
+font-weight:700;
+color:#111827;
+}
+
+.section{
+background:#ffffff;
+border-radius:12px;
+padding:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.05);
+margin-bottom:24px;
+}
+
+.section-title{
+font-size:14px;
+font-weight:600;
+margin-bottom:14px;
+color:#111827;
+}
+
+.chart-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px;
+align-items:center;
+}
+
+</style>
+
+
+<div class="kpi-grid">
+
+<div class="kpi">
+<div class="kpi-title">Simulation Scenarios</div>
+<div class="kpi-value">3</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Best Scenario</div>
+<div class="kpi-value">Scenario B</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Energy Stability</div>
+<div class="kpi-value">92%</div>
+</div>
+
+<div class="kpi">
+<div class="kpi-title">Cost Efficiency</div>
+<div class="kpi-value">88%</div>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-title">
+Dispatch Scenario Comparison
+</div>
+
+<div class="chart-layout">
+
+<div id="dispatchSimulationChart" style="width:100%;height:400px;"></div>
+
+<div style="font-size:13px;color:#6B7280;line-height:1.7;">
+
+此圖比較不同調度策略情境下的供電表現。<br><br>
+
+每條線代表一種策略模擬結果，
+可以比較不同策略在供電穩定度與效率上的差異。
+
+<br><br>
+
+透過此模擬分析可以協助選擇最佳調度策略。
+
+</div>
+
+</div>
+
+</div>

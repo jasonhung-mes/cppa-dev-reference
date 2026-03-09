@@ -1,0 +1,64 @@
+<h2>電價制度版本</h2>
+
+<div class="card">
+  <div class="card-title">功能說明</div>
+  <p>
+  電價制度版本用於管理同一電價制度在不同年度或期間的電價設定。
+  例如每年可能會有不同的尖峰、半尖峰與離峰電價，因此透過版本管理
+  可以保留歷史資料並支援結算與分析。
+  </p>
+</div>
+
+<div class="card">
+
+  <div class="card-title">電價版本列表</div>
+
+  <button class="button button-primary">新增版本</button>
+
+  <table class="table" style="margin-top:12px;">
+
+    <thead>
+      <tr>
+        <th>版本代碼</th>
+        <th>電價制度</th>
+        <th>適用年度</th>
+        <th>開始日期</th>
+        <th>結束日期</th>
+        <th>狀態</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>VER2025</td>
+        <td>標準 TOU 電價</td>
+        <td>2025</td>
+        <td>2025-01-01</td>
+        <td>2025-12-31</td>
+        <td><span class="badge">Active</span></td>
+        <td class="table-actions">
+          <button class="button button-secondary">查看</button>
+          <button class="button button-secondary">編輯</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>VER2026</td>
+        <td>標準 TOU 電價</td>
+        <td>2026</td>
+        <td>2026-01-01</td>
+        <td>2026-12-31</td>
+        <td><span class="badge">Draft</span></td>
+        <td class="table-actions">
+          <button class="button button-secondary">查看</button>
+          <button class="button button-secondary">編輯</button>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
