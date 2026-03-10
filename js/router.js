@@ -375,9 +375,9 @@ chart.setOption({
 series:[{
 type:"pie",
 data:[
-{value:40,name:"Solar"},
-{value:30,name:"Wind"},
-{value:30,name:"Storage"}
+{value:40,name:"比例分配(RATIO)"},
+{value:30,name:"固定電量分配(VOLUME)"},
+{value:30,name:"混合分配(HYBRID)"}
 ]
 }]
 
@@ -396,14 +396,27 @@ if(!el) return
 
 const chart = echarts.init(el)
 
+const data = [
+{name:"Plant A", value:5},
+{name:"Plant B", value:4},
+{name:"Plant C", value:3}
+]
+
 chart.setOption({
 
-xAxis:{type:"category",data:["Plant A","Plant B","Plant C"]},
-yAxis:{type:"value"},
+xAxis:{
+type:"category",
+data:data.map(d => d.name)
+},
+
+yAxis:{
+type:"value",
+name:"電量 (MWh)"
+},
 
 series:[{
 type:"bar",
-data:[5,4,3]
+data:data.map(d => d.value)
 }]
 
 })
@@ -558,12 +571,19 @@ const chart = echarts.init(el)
 
 chart.setOption({
 
-xAxis:{type:"category",data:["Jan","Feb","Mar","Apr"]},
-yAxis:{type:"value"},
+xAxis:{
+type:"category",
+data:["10月","11月","12月"]
+},
+
+yAxis:{
+type:"value",
+name:"電量 (MWh)"
+},
 
 series:[{
 type:"bar",
-data:[120,132,101,134]
+data:[14.2,13.6,14.8]
 }]
 
 })
@@ -583,14 +603,67 @@ const chart = echarts.init(el)
 
 chart.setOption({
 
-series:[{
-type:"pie",
-radius:"65%",
-data:[
-{value:55,name:"Carbon Reduction"},
-{value:45,name:"Energy Saving"}
+tooltip:{
+trigger:"axis"
+},
+
+legend:{
+data:["減碳量","成本節省"]
+},
+
+xAxis:{
+type:"category",
+data:["效益"]
+},
+
+yAxis:[
+{
+type:"value",
+name:"減碳量 (tCO₂)",
+axisLine:{
+show:true,
+lineStyle:{
+color:"#2ecc71"
+}
+},
+axisLabel:{
+color:"#2ecc71"
+}
+},
+{
+type:"value",
+name:"成本節省 ($)",
+axisLine:{
+show:true,
+lineStyle:{
+color:"#3498db"
+}
+},
+axisLabel:{
+color:"#3498db"
+}
+}
+],
+
+series:[
+{
+name:"減碳量",
+type:"bar",
+data:[21.3],
+itemStyle:{
+color:"#2ecc71"
+}
+},
+{
+name:"成本節省",
+type:"bar",
+yAxisIndex:1,
+data:[6200],
+itemStyle:{
+color:"#3498db"
+}
+}
 ]
-}]
 
 })
 
